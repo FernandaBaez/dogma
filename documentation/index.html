@@ -1,0 +1,445 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Dogma - Creative Responsive  Architecture Template</title>
+	
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#DE6325;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+		<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start - Files</a></li>
+			<li><a href="#structure">Classes and structure</a></li>
+			<li><a href="#ajax">Ajax</a></li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#icons">Icons</a></li>
+			<li><a href="#port">Portfolio</a></li>
+			<li><a href="#contact_form">Contact form</a></li>
+			<li><a href="#video">Video background</a></li>
+			<li><a href="#share">Share</a></li>
+			<li><a href="#map">Map</a></li> 
+			<li><a href="#sources_credits">Sources & Credits</a></li>
+			<li><a href="#thanks">Thanks</a></li>
+
+		</ol>
+	</div>
+	<div id="documenter_content">
+	
+	
+	
+	<section id="documenter_cover"><h1>Dogma </h1><h2>Creative Responsive  Architecture Template</h2><hr><ul><li>Created: 21/11/2015</li><li>latest Update: 21/11/2015</li><li>By: KWST</li><li><a href="http://themeforest.net/user/kwst"></a></li><li>Email: <a href="mailto:support@kwst.net">support@kwst.net</a></li></ul>
+	<p>Thanks for purchasing tempalte and for supporting my work. Dogma - Creative Responsive  Architecture Template . This documentation will not teach you HTML & CSS, it's just showcase of custom elements used in template.  . Also included in the archive selection page version. It is located in the folder "intro" .</p>  This template is perfect for architects, builders, photographers and designers of furniture <br>
+	<p><strong style="color:red"> Very important !</strong> In order to work php scripts (contact form), and also worked Ajax request - your site files must reside on the local host or server. In turn, you can easily edit any page (all JavaScript files will work).</p>
+<br><br><h3>Files</h3><hr class="notop"><br>
+<p>All site files are divided into folders:<br><br>
+<strong>css folder</strong> - css files that are responsible for the style themes.<br>
+<strong>js folder</strong> - javascript files.<br>
+<strong>php folder</strong> - php files.<br>
+<strong>images folder</strong> - folder that contains all images.<br>
+<strong>fonts folder</strong> - folder that contains  fonts plugin "Font-Awesome".<br>
+</p>
+
+
+</section>
+<div class="clerfix"></div>
+
+
+
+
+<section id="structure">
+<h3>Classes and structure</h3><hr class="notop">
+
+
+
+<h3>Structure</h3>
+<p>All content that is dynamically loaded must be between the tags</p>
+
+<pre class="brush: html">
+
+
+            <div id="wrapper">
+                <div class="content-holder elem scale-bg2 transition3">
+
+				your content 
+				
+				</div>
+			</div>
+
+</pre>
+
+<h3>Header and footer  in home pages : </h3>
+ 
+<p>To add a header and footer on the home page -  in html file find line :
+</p>
+<pre class="brush: html">
+ <div class="content-holder elem scale-bg2   no-padding">
+</pre>
+<p>And remove class "no-padding " . It should look like :
+</p>
+ <pre class="brush: html">
+ <div class="content-holder elem scale-bg2">
+</pre>
+<p>Next step . Find line : 
+</p>
+<pre class="brush: html">
+<div class="content full-height no-padding home-content ">
+</pre>
+<p>And remove class "no-padding home-content " . It should look like :
+</p>
+ <pre class="brush: html">
+<div class="content full-height">
+</pre>
+<p><strong style="color:red"> Very important !</strong> Do not remove the header and footer from html code </p>
+ </section>	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<section id="ajax">
+<h3>Ajax</h3><hr class="notop">
+
+<p>To dynamically loaded content - you can simply add a link class "ajax". For example: </p>
+<pre class="brush: html">
+
+<a href="portfoliosingle2.html" class="ajax">Portfolio </a>
+
+
+</pre>
+<p>Accordingly to the content page was loaded as usual, this class must be removed</p><br>
+<h3>Disable ajax</h3>
+<p>To disable Ajax  throughout the template - open file scripts.js  find</p>
+<pre class="brush: js">
+
+// Init core  ------------------
+$(function() {
+    $.coretemp({
+        reloadbox: "#wrapper",
+        loadErrorMessage: "<h2>404</h2> <br> page not found.",
+        loadErrorBacklinkText: "Back to the last page",
+        outDuration: 250,
+        inDuration: 150
+    });
+    readyFunctions();
+    $(document).on({
+        ksctbCallback: function() {
+            readyFunctions();
+        }
+    });
+});
+// Init all functions  ------------------
+function readyFunctions() {
+    initDogma();
+    initvideo();
+}
+</pre>
+<p>And the change it  on this code :</p>
+<pre class="brush: js">
+
+$(document).ready(function() {
+    initDogma();
+    initvideo();
+});
+</pre>
+<p>In order to remove the Ajax request in separate links  - just remove class "ajax" . For example  <a href="portfoliosingle2.html">Portfolio </a></p>
+<p><strong style="color:red"> Very important !</strong> In the browser, Internet Explorer 9 - Ajax request does not work - there is regular reload, but all the scripts and animation work</p>
+
+</section>	
+
+
+<section id="images">	
+<h3>Images</h3><hr class="notop">
+<p>All images are in the folder "images".<br>       
+</p>
+<br>
+<h3>How to add and change the background image</h3>
+
+<p>To change the background you can simply change the path in the style rendered in html code, for example : </p>
+<pre class="brush: html">
+ 
+<div class="bg" style="background-image: url(images/bg/10.jpg) "></div>
+	
+</pre>
+<p>To change the image in the column  find line : </p>
+<pre class="brush: html">
+     <div class="item">
+        <div class="bg" style="background-image:url(images/bg/26.jpg)"></div>
+    </div>
+
+</pre>
+ 
+</section>
+
+<section id="icons">
+	<h3>Icons</h3><hr class="notop">
+<p>	All  icons are generated by the plugin <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">"Font-Awesome"</a>. List of all the icons can be found <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">here</a>. 
+<br>
+  Read the documentation plugin - it is described in detail how to change the icons  and their size.
+
+</p>
+<p>For example: </p>
+<pre class="brush: html">
+    <div class="footer-social">
+        <ul>
+            <li><a href="#" target="_blank" ><i class="fa fa-facebook"></i><span>facebook</span></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i><span>twitter</span></a></li>
+            <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i><span>instagram</span></a></li>
+            <li><a href="#" target="_blank" ><i class="fa fa-pinterest"></i><span>pinterest</span></a></li>
+            <li><a href="#" target="_blank" ><i class="fa fa-tumblr"></i><span>tumblr</span></a></li>
+        </ul>
+     </div>
+</pre>
+
+<p>&nbsp;
+	</p>
+</section>
+
+<section id="port">
+<h3>Portfolio</h3><hr class="notop">
+
+ 
+<p>Default width portfolio structure consists of four columns . If you want to make three columns you have to add the class  <strong style="color:red">three-coulms</strong> to the div tag with  class <strong style="color:red">gallery-items</strong> </p> 
+
+<pre class="brush: html">
+<div class="gallery-items three-coulms grid-small-pad">
+<!--3 colums  -->
+</div>
+
+</pre>
+<p>Filters portfolio - To filter worked - class links in the code must conform to the class of the filter element, for example: </p>  
+ 
+ 
+<pre class="brush: html">
+                                <div class="gallery-filters at">
+                                    <a href="#" class="gallery-filter gallery-filter-active"  data-filter="*">All</a>		
+                                    <a href="#" class="gallery-filter " data-filter=".houses">Houses</a>
+                                    <a href="#" class="gallery-filter" data-filter=".interior">Interior</a>
+                                    <a href="#" class="gallery-filter" data-filter=".apartments">Apartments</a>
+                                </div>
+
+
+</pre>
+<pre class="brush: html">
+                                <!-- 2 -->
+                                <div class="gallery-item houses interior">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <div class="wh-info-box">
+                                                <div class="wh-info-box-inner at">
+                                                    <a href="portfolio-single.html" class="ajax">
+                                                    Modern house                                                
+                                                    </a>
+                                                    <span class="folio-cat">Houses design</span>
+                                                </div>
+                                            </div>
+                                            <img  src="images/folio/thumbs/26.jpg"   alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 end -->
+
+
+
+</pre>
+ <p>In this case, when you click on the link with the class "houses" will be displayed elements with class "houses"</p> 
+ 
+ </section>	
+
+
+<section id="contact_form">
+	<h3>Contact Form</h3><hr class="notop">
+<p>
+Find the file "contact_me" in the folder <strong>php</strong> . In this file, find the line <strong style="color:red">$to_Email = "myemail@gmail.com";</strong> and add you e-mail.</p> 
+<p>How to forward mail to your mailbox ask your Hosting Service Provider. Because providers use different control panel site and I find it hard to predict what you use. Server side script for sending emails is in "contact_me.php" . Ajax submit is initialized in "scripts.js" file.</p>
+<p>&nbsp;
+	</p>
+	
+<pre class="brush: js">
+
+//  Contact form ------------------
+    $("#contactform").submit(function() {
+        var a = $(this).attr("action");
+        $("#message").slideUp(750, function() {
+            $("#message").hide();
+            $("#submit").attr("disabled", "disabled");
+            $.post(a, {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                comments: $("#comments").val()
+            }, function(a) {
+                document.getElementById("message").innerHTML = a;
+                $("#message").slideDown("slow");
+                $("#submit").removeAttr("disabled");
+                if (null != a.match("success")) $("#contactform").slideDown("slow");
+            });
+        });
+        return false;
+    });
+    $("#contactform input, #contactform textarea").keyup(function() {
+        $("#message").slideUp(1500);
+    });
+
+</pre>
+</section>
+
+
+<section id="video">
+<h3>Video</h3><hr class="notop">
+
+<p>This template uses Youtube  video as background . To add your video  in html file find line :</p>
+
+<pre class="brush: html">
+ 
+<div  class="background-video" data-vid="oDpSPNIozt8" data-mv="1"> </div>
+</pre>
+
+<p>add you video id  in data-vid="" if you want add sound change data-mv="1" on data-mv="0" </p>
+<p>And yet the video does not play on smartphones :( - so if a user comes to your site from a mobile browser - the background is replaced by a picture :)</p>
+ 
+
+ 
+
+
+ </section>	
+
+
+
+
+ 
+ 
+ 
+ 
+<section id="share">
+<h3>Share your pages</h3><hr class="notop">
+<p>To configure the plugin  in html file  find line :</p>
+<pre class="brush: html"> 		
+<div class="share-container"  data-share="['facebook','pinterest','googleplus','twitter','linkedin']"></div>
+
+	
+</pre>
+<p>You can simply add a comma in line: <strong>social: ['facebook','pinterest','googleplus','twitter','linkedin'] ,</strong>  separated names of social networks . On each page, you can add different links to share
+</p>
+<p>Supported social networks : facebook , twitter , linkedin , in1 , tumblr , digg , googleplus , reddit , pinterest , posterous , stumbleupon</p>
+</section>
+
+
+ 
+ 
+ <section id="map">
+<h3>Map</h3><hr class="notop">
+<p>To configure the map   in   file map.js   find code :</p>
+<pre class="brush: js"> 		
+			// markers and locations------------------
+            values: [ {
+                latLng: [ 40.7143528, -74.0059731 ],
+                data: "Our office  - New York City",
+                options: {
+                    icon: "images/marker.png"
+                }
+            } ],	
+</pre>
+<p> And add your own values latLng: [ 40.7143528, -74.0059731 ]  latitude and longitude , data  = Description in the pop-up window . To find the coordinates - visit this <a href="http://www.mapcoordinates.net/en" target="_blank"><strong style="color:red">link</strong></a>  </p>
+<p>Next step you need api key  . To find key visit this  <a href="https://developers.google.com/maps/documentation/javascript/get-api-key"><strong style="color:red">link</strong></a> . And add your key in each page in code :
+
+ </p>
+ <pre class="brush: html">
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" type="text/javascript"></script>
+</pre>
+</section>
+ 
+
+<section id="sources_credits">
+	<h3>Sources & Credits</h3><hr class="notop">
+<p>
+
+	
+	
+	<strong>Images</strong><br>
+	https://www.behance.net/
+
+	</p>
+
+<p>
+	<strong>Icons</strong><br>
+		Font-Awesome<br>
+	http://fortawesome.github.io/Font-Awesome/</p>
+
+
+
+<p>
+<strong>Javascripts </strong><br><br>
+
+	<strong>JQuery</strong><br>
+	http://jquery.com</p>
+<p>
+	<strong>JQuery Easing</strong><br>
+	http://gsgd.co.uk/sandbox/jquery/easing/</p>
+<p>
+	<strong>Owlcarousel</strong><br>
+	http://www.owlcarousel.owlgraphic.com/</p>
+	<p>
+	<strong>isotope</strong><br>
+	http://isotope.metafizzy.co/</p>
+		<p>
+	<strong> Magnific Popup</strong><br>
+	http://dimsemenov.com/plugins/magnific-popup/</p>	
+	
+ 
+	
+</section>
+<section id="thanks">
+	<h3>Thanks</h3><hr class="notop">
+<p>
+	Thanks for purchasing template and for supporting my work. If we fail here in this documentation, please e-mail me  <a href="mailto:support@kwst.net">support@kwst.net</a>. If you have a spare time, please go and rate my template. I will apreciate that.</p>
+<p>
+	Thanks</p>
+</section>
+
+	</div>
+</body>
+</html>
